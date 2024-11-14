@@ -14,7 +14,7 @@ public class TimeFormat {
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 		String minSt = "";
 		if (minutes<10)
-			minSt = "0" + minSt;
+			minSt = "0" + minutes;
 		if (hours>12)
 			hours-=12;	
 		else if (hours<12)
