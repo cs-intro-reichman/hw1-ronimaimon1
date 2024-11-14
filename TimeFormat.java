@@ -15,11 +15,13 @@ public class TimeFormat {
 		String minSt = "";
 		if (minutes<10)
 			minSt = "0" + minutes;
-		if (hours>12)
-			hours-=12;	
+		if (hours>12){
+				hours-=12;
+				System.out.println(hours + ":" + minSt + " PM");
+		}	
 		else if (hours<12)
-			System.out.println(hours + ":" + minSt + " AM");	
+			System.out.println(hours + ":" + minSt + " AM");
 		else
-			System.out.println(hours + ":" + minSt + " PM");
+			System.out.println(hours + ":" + minSt + " PM");	
 	}
 }
